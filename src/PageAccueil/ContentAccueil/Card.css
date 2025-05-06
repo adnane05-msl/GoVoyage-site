@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.carte {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.427); 
+    border-radius: 6px;
+}
+.carte .carte-image{
+    display: block;
+    width: 350px;
+}
+.carte .carte-content {
+    position: absolute;
+    bottom: 0px;
+    left:130%;
+    right: 0;
+    visibility: hidden;
+    background-color: #e6cdb2;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+}
+.carte .hovered{
+    visibility:visible;
+    width: 100%;
+    left: 0;
+    transition: 1.3s ease;
+}
+
+.carte .carte-content .ville{
+    position: absolute;
+    text-transform: uppercase;
+    color: #FF6B00;
+    font-size: 0px;
+    font-weight: bold;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.carte:hover .carte-content .ville{
+    font-size: 35px;
+    transition: 0.8s ease;
+}
+.carte .carte-content .pays{
+
+    position: absolute;
+    text-transform: capitalize;
+    color: #111;
+    top: 53%;
+    left: 10%;
+}
+.carte .carte-content .pays .icon{
+    color: rgb(205, 33, 33);
+    padding-right: 8px;
+}
+.carte .carte-content .description .icon{
+    color: rgb(156, 111, 52);
+    padding-right: 8px;
+}
+
+.carte .carte-content .description{
+    position: absolute;
+    color: #000000;
+    top: 68%;   
+    left: 9%;
+    font-family: "Great Vibes", cursive;
+    font-size: 26px;
+    font-style: normal;
+    padding-right: 1px;
+}
+
+

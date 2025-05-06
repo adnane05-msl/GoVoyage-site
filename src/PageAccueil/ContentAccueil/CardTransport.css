@@ -1,0 +1,13 @@
+.carte-transport{
+    width: 350px;
+}
+.carte-transport .card-body .nom-transport{
+    text-align: center;
+    font-weight: bold;
+    color: #d16313;
+}
+.carte-transport:hover{
+    transform: scale(105%);
+    z-index: 1;
+}
+
