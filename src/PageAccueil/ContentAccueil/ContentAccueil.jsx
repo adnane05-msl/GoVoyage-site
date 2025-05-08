@@ -110,6 +110,7 @@ function ContentAccueil() {
                         )}
                 </div>
             </section>
+
         </div>
     )
 }

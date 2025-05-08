@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* titre */
+.ContentApropos{
+    margin-top: 30px;
+}
 .ContentApropos section .titre{
     font-weight: bold;
     font-size: 30px;
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     border-left: 6px solid #FF6B00;
     padding-left: 10px;
 }
@@ -25,10 +28,9 @@
     text-indent: 3em;
     font-size: 17px;
 }
-.ContentApropos img{
+.ContentApropos #intoduction .sectionOne img{
     width: 300px;
     height: 200px;
-    float: left;
     box-shadow: -7px 6px 6px  #ff6a00e3;
 }
 .ContentApropos section .paragraphe span{
@@ -40,3 +42,7 @@
 
 /* historique */
 
+.ContentApropos #historique .sectionTwo{
+    margin: 0px 80px;
+    gap: 100px;
+}

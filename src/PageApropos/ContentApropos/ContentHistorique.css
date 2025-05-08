@@ -1,0 +1,26 @@
+/*  */
+.ContentHistorique{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.ContentHistorique .text .sous-titre{
+    text-align: center;
+    font-weight: bold;
+    color: #f68230;
+    padding-bottom: 30px;
+}
+
+.ContentHistorique .text .paragraphe{
+    font-style: italic;
+}
+.ContentHistorique .image-historique img{
+    width: 350px;
+    height: 220px;
+}
+.ContentHistorique .image-historique .left{
+    box-shadow: -7px 6px 7px  #ff6a00e3;
+}
+.ContentHistorique .image-historique .right{
+    box-shadow: 7px 6px 7px  #ff6a00e3;
+}
