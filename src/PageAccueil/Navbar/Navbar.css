@@ -30,7 +30,7 @@
     font-size: 15px;
     font-weight: 405;
 }
-.menu .nav-link:focus,
+.menu .nav-link.active,
 .menu .nav-link:hover {
     text-decoration: underline;
     text-decoration-color: #FF6B00; 
@@ -39,22 +39,22 @@
 
 
 
+
 .menu .connexion{
     border: 2px solid #FF6B00;
     border-radius: 21px;
-    padding: 0;
     font-weight: 600;
-}
-.menu .connexion{
     padding: 5px 5px;
     border-radius: 21px;
     color: #FF6B00;
 }
-.menu .connexion:focus,
+.menu .nav-link.connexion.active,
 .menu .connexion:hover{
     text-decoration: none;
     color: #ffffff;
     background-color: #FF6B00;
     transition: 0.3s;
+    
 } 
+
 

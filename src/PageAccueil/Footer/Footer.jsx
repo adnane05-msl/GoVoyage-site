@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faCalendarCheck, faCompass, faUser  } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faCalendarCheck, faCompass, faUser, faMessage  } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -26,6 +26,8 @@ function Footer() {
                                 <li><a href="" className="d-flex align-items-center"><FontAwesomeIcon icon={faHouse}          className='icon'/>Accueil</a></li>
                                 <li><a href="" className="d-flex align-items-center"><FontAwesomeIcon icon={faCalendarCheck}  className='icon'/>réservation</a></li>
                                 <li><a href="" className="d-flex align-items-center"><FontAwesomeIcon icon={faCompass}        className='icon'/>À propos</a></li>
+                                <li><a href="" className="d-flex align-items-center"><FontAwesomeIcon icon={faMessage}           className='icon'/>Contact</a></li>
+                            
                             </ul>
                     </div>
 

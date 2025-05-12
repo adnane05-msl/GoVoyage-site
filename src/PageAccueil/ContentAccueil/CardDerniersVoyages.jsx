@@ -6,19 +6,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function CardDerniersVoyages(props) {
 
-        const [isHovered, setIsHovered] = useState(false)
+        const [isHovered, setIsHovered] = useState(false);
+
+        function MouseEnter(){
+            setIsHovered(true)
+        }
+        function MouseLeave(){
+            setIsHovered(false)
+        }
         
     
     return (
         <div>
-            <div className="carte"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                    >
+            <div className="carte" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave}>
             
                         <div>
                             <img src={props.img} alt={props.ville} className='carte-image rounded'/>
                         </div>
+                        
                         <div className={isHovered ? "carte-content hovered" : "carte-content"}>
                             <h3 className='ville'>{props.ville}</h3>
                             <h5 className='pays'><FontAwesomeIcon icon={faMapPin} className='icon'/>{props.pays}</h5>

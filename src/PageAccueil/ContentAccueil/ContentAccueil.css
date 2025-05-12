@@ -2,12 +2,11 @@
 .ContentAccueil #premier-section p{
     text-align: center;
     color: #d16313;
-    font-size: 30px;
+    font-size: clamp(16px, 3vw, 30px);
     font-weight: bold;
     padding-top: 40px;
 }
 .ContentAccueil #premier-section .image-couple{
-    height: 70vh;
     width: 65vw;
 }
 
@@ -22,7 +21,7 @@
 
 .ContentAccueil section .titre{
     font-weight: bold;
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
     margin-left: 20px;

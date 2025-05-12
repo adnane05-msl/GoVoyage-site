@@ -1,8 +1,9 @@
 .card-comment{
     min-height: 100%;
     width: 390px;
-
 }
+
+/* icons */
 
 .card-comment .card-body .icon{
     padding-right: 10px;
@@ -11,17 +12,24 @@
     padding-left: 20px;
     color: #6f5746;
 }
+
+/* nom */
+
 .card-comment .card-body .nom{
     font-weight: bold;
     color: #d16313;
     margin: 0px;
 }
+
+/* comment */
+
 .card-comment .card-body .comment{
     padding-top: 20px;
 }
 
+/* note */
+
 .card-comment .card-body .nom-note{
     display: flex;
     gap: 30px;
-    /* align-items: center; */
 }

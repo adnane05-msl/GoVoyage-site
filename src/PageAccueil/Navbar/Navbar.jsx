@@ -1,8 +1,16 @@
 import React from 'react'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation  } from 'react-router-dom'
 
 function Navbar() {
+
+    const location = useLocation();
+    
+    // Fonction pour vérifier si le lien est actif
+    function isActive(path){
+        return location.pathname === path;
+    }
+
     return (
         <div className='Navbar navbar-expand-lg navbar fixed-top'>
             <nav className='container-fluid '>
@@ -17,11 +25,11 @@ function Navbar() {
 
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="menu navbar-nav ms-auto">
-                        <Link to='/'            className="nav-link">accueil</Link>
-                        <Link to='/Reservation' className="nav-link">Réservation</Link>
-                        <Link to='/Apropos'     className="nav-link">À propos</Link>
-                        <Link to='/Contact'     className="nav-link">Contact</Link>
-                        <Link to='/Connexion'   className="nav-link connexion">Se connecter</Link>
+                        <Link to='/'            className={`nav-link ${isActive('/') ? 'active' : ''}`}>accueil</Link>
+                        <Link to='/Reservation' className={`nav-link ${isActive('/Reservation') ? 'active' : ''}`}>Réservation</Link>
+                        <Link to='/Apropos'     className={`nav-link ${isActive('/Apropos') ? 'active' : ''}`}>À propos</Link>
+                        <Link to='/Contact'     className={`nav-link ${isActive('/Contact') ? 'active' : ''}`}>Contact</Link>
+                        <Link to='/Connexion'   className={`nav-link connexion ${isActive('/Connexion') ? 'active' : ''}`}>Se connecter</Link>
                     </div>
                 </div>
             </nav>

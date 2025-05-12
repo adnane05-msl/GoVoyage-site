@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 import Video from '../../assets/Design sans titre.mp4'
 
@@ -16,7 +17,7 @@ function Header() {
                     <p>- Réservez votre prochain voyage en quelques clics -</p>
 
                     <div className='button'>
-                        <button className='btn btn-outline-light btn-lg'><a href="">réservation</a></button>
+                        <Link to='/Reservation'><button className='btn btn-outline-light btn-lg'>Réservation</button></Link>
                     </div>
                 </div>
 

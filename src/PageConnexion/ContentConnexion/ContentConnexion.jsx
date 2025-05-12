@@ -9,27 +9,35 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 
 function ContentConnexion() {
         
+    // Hook pour le mot de passe
 
     const [showPasswordInscri, setShowPasswordInscri] = useState(false);
 
+    // Fonction pour afficher ou masquer le mot de passe
+    
     function togglePasswordInscri (){
         setShowPasswordInscri(!showPasswordInscri);
     }
-
+    
+    // Hook pour la navigation
+    
     const navigate = useNavigate();
-        const handleConnexion = (e) => {
-            e.preventDefault();
-            Swal.fire({
-                position: 'top',
-                title: "Connexion réussie!",
-                text: "Bienvenue de retour!",
-                icon: "success",
-                showConfirmButton: false,
-                timer: 1500
-            }).then(() => {
-                navigate('/'); 
-            });
-        }
+
+    // Alert de connexion
+    
+    function handleConnexion (e) {
+        e.preventDefault();
+        Swal.fire({
+            position: 'top',
+            title: "Connexion réussie!",
+            text: "Bienvenue de retour!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 1500
+        }).then(() => {
+            navigate('/'); 
+        });
+    }
         
     return (
         <div className='connexion'>
@@ -44,22 +52,17 @@ function ContentConnexion() {
                             <input type="text" placeholder="Nom d'utilisateur" required/>
                         </div>
 
-                            <div className="input password-field">
-                                <input type={showPasswordInscri ? "text" :"password"} placeholder="Mot de passe" required />
-                                <button type="button" className="toggle-password" onClick={togglePasswordInscri}>
-                                    {showPasswordInscri ? <FontAwesomeIcon icon={faEyeSlash}/> : <FontAwesomeIcon icon={faEye}/>}
-                                </button>
-                            </div>
-                            
-                        
-
-
-                            
-
+                        <div className="input password-field">
+                            <input type={showPasswordInscri ? "text" :"password"} placeholder="Mot de passe" required />
+                            <button type="button" className="toggle-password" onClick={togglePasswordInscri}>
+                                {showPasswordInscri ? <FontAwesomeIcon icon={faEyeSlash}/> : <FontAwesomeIcon icon={faEye}/>}
+                            </button>
+                        </div>
                         
                         <div className='oublie'>
                             <a href="#">Mot de passe oublié ?</a>
                         </div>
+
                         
                         <button type="submit" className='btn-connexion'>se connecter</button>
 

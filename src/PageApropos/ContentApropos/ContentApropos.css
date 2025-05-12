@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* titre */
+
 .ContentApropos{
     margin-top: 30px;
 }
+
+/* titre */
+
 .ContentApropos section .titre{
     font-weight: bold;
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
     text-transform: capitalize;
     font-family: "Playfair Display", serif;
     margin-left: 20px;
@@ -43,6 +46,36 @@
 /* historique */
 
 .ContentApropos #historique .sectionTwo{
-    margin: 0px 80px;
-    gap: 100px;
+    margin: 0px 50px;
+    gap: 90px;
+    margin-bottom: 90px;
+}
+
+
+@media (max-width: 968px) {
+    .ContentApropos section .titre{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .ContentApropos #intoduction .sectionOne{
+        flex-direction: column-reverse;
+        margin: 0px 10px;
+        padding-right: 0px;
+    }
+    .ContentApropos #intoduction .sectionOne img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .ContentApropos #historique .sectionTwo{
+        flex-direction: column-reverse;
+        margin: 0px 5px;
+        padding-right: 0px;
+    }
+    
+    .ContentApropos section .paragraphe{
+        font-size: 15px;
+        text-indent: 2em;
+    }
 }

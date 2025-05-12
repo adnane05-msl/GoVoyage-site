@@ -1,0 +1,38 @@
+.erreur{
+    text-align: center;
+    margin: 30px;
+
+}
+.erreur h1{
+    color: red;
+    font-size: 70px;
+    padding-bottom: 30px;
+}
+.erreur p{
+    font-size: 18px;
+}
+.erreur .lien{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+.erreur .lien:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .erreur{
+        margin-top: 50%;
+    }
+    .erreur h1{
+        font-size: 50px;
+        padding-bottom: 50px;
+    }
+    .erreur p{
+        font-size: 16px;
+    }
+    .erreur .lien{
+        font-size: 18px;
+    }
+}

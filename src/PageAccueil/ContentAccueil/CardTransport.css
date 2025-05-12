@@ -1,6 +1,9 @@
 .carte-transport{
     width: 350px;
 }
+
+/* nom transport */
+
 .carte-transport .card-body .nom-transport{
     text-align: center;
     font-weight: bold;
