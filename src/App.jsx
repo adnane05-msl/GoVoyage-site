@@ -25,6 +25,7 @@ function App() {
         <Route path='/Inscription' element={<Inscription/>}/>
         <Route path='/FormulaireReservation' element={<FormulaireReservation/>}/>
         <Route path='*' element={<Erreur/>}/>
+        
       </Routes>
     </BrowserRouter>
   )
