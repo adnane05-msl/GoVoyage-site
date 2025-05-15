@@ -10,7 +10,6 @@ import Contact from './PageContact/Contact'
 import Reservation from './PageReservation/Reservation'
 import FormulaireReservation from './PageReservation/FormulaireReservation'
 import Erreur from './Erreur/Erreur'
-
 function App() {
   
 
@@ -25,7 +24,6 @@ function App() {
         <Route path='/Inscription' element={<Inscription/>}/>
         <Route path='/FormulaireReservation' element={<FormulaireReservation/>}/>
         <Route path='*' element={<Erreur/>}/>
-        
       </Routes>
     </BrowserRouter>
   )
